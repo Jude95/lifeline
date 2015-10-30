@@ -1,18 +1,18 @@
 package com.jude;
 
-import com.jude.prisoner.ExamplePrisoner;
+import com.jude.prisoner.NimaPrisoner;
 import com.jude.manager.Manager;
 
 import java.util.Map;
 
 public class Main {
     public static final Prisoner[] PRISONERS = {
-            new ExamplePrisoner(),
-            new ExamplePrisoner(),
-            new ExamplePrisoner(),
-            new ExamplePrisoner(),
-            new ExamplePrisoner(),
-            new ExamplePrisoner(),
+            new NimaPrisoner(),
+            new NimaPrisoner(),
+            new NimaPrisoner(),
+            new NimaPrisoner(),
+            new NimaPrisoner(),
+            new NimaPrisoner(),
     };
 
 

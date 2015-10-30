@@ -5,7 +5,7 @@ import com.jude.Prisoner;
 /**
  * Created by Mr.Jude on 2015/10/28.
  */
-public class ExamplePrisoner implements Prisoner {
+public class NimaPrisoner implements Prisoner {
     int totalCount;
     int totalPerson;
 
@@ -28,7 +28,7 @@ public class ExamplePrisoner implements Prisoner {
 
     @Override
     public void result(boolean survived) {
-        //我也不会管我的生死
+
     }
 
 }
