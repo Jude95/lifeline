@@ -24,6 +24,15 @@ public class Manager {
     }
 
     public void start(int roundCount){
+        //初始化各个囚徒
+        for (Prisoner mPrisoner : mPrisoners) {
+            try {
+                mPrisoner.begin(this,mPrisoners.size(), mBeanCount);
+            }catch (Exception e){
+                //总有刁民想害朕
+            }
+        }
+        //无尽的轮回
         for (int round = 0; round < roundCount; round++) {
             int total = mBeanCount;
             init();
@@ -42,11 +51,6 @@ public class Manager {
         //初始化每个囚徒与豆子数量
         mTempHold = new HashMap<Prisoner, Integer>();
         for (Prisoner mPrisoner : mPrisoners) {
-            try {
-                mPrisoner.begin(mPrisoners.size(), mBeanCount);
-            }catch (Exception e){
-                //总有一些图谋不轨的人想害朕
-            }
             mTempHold.put(mPrisoner,-1);
         }
     }
@@ -61,7 +65,7 @@ public class Manager {
             count=-1;
             //这些神经病抓出来单独死
         }
-        //如果返回无效个数，和上面的神经病一样处理
+        //如果返回无效个数，和上面的神经病一样死
         if (count>last||count<0)count=-1;
 
         System.out.println(mPrisoners.get(index).getName()+"取了"+count+"个");
@@ -109,10 +113,16 @@ public class Manager {
             arrayList.get(i).getKey().result(true);
             mScore.replace(arrayList.get(i).getKey(),mScore.get(arrayList.get(i).getKey())+1);
         }
-        arrayList.get(0).getKey().result(false);
-        System.out.println(arrayList.get(0).getKey().getName()+"拿了最多:"+arrayList.get(0).getValue()+"个");
-        arrayList.get(arrayList.size()-1).getKey().result(false);
-        System.out.println(arrayList.get(arrayList.size()-1).getKey().getName()+"拿了最少:"+arrayList.get(arrayList.size()-1).getValue()+"个");
+        try {
+
+            arrayList.get(0).getKey().result(false);
+            System.out.println(arrayList.get(0).getKey().getName()+"拿了最多:"+arrayList.get(0).getValue()+"个");
+            arrayList.get(arrayList.size()-1).getKey().result(false);
+            System.out.println(arrayList.get(arrayList.size()-1).getKey().getName()+"拿了最少:"+arrayList.get(arrayList.size()-1).getValue()+"个");
+
+        }catch (Exception e){
+            //总有刁民想害朕
+        }
     }
 
 }

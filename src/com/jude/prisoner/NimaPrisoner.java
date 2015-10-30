@@ -1,6 +1,7 @@
 package com.jude.prisoner;
 
 import com.jude.Prisoner;
+import com.jude.manager.Manager;
 
 /**
  * Created by Mr.Jude on 2015/10/28.
@@ -15,7 +16,7 @@ public class NimaPrisoner implements Prisoner {
     }
 
     @Override
-    public void begin(int totalPerson, int totalCount) {
+    public void begin(Manager manager,int totalPerson, int totalCount) {
         this.totalCount = totalCount;
         this.totalPerson = totalPerson;
     }
