@@ -1,4 +1,4 @@
-package com.jude.deciders;
+package com.jude.prisoner;
 
 import com.jude.Prisoner;
 

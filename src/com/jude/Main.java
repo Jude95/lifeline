@@ -1,6 +1,6 @@
 package com.jude;
 
-import com.jude.deciders.ExamplePrisoner;
+import com.jude.prisoner.ExamplePrisoner;
 import com.jude.manager.Manager;
 
 import java.util.Map;
