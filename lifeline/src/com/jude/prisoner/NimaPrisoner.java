@@ -1,7 +1,7 @@
 package com.jude.prisoner;
 
 import com.jude.Prisoner;
-import com.jude.manager.Manager;
+import com.jude.Manager;
 
 /**
  * Created by Mr.Jude on 2015/10/28.
