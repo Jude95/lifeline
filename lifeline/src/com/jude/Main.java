@@ -1,7 +1,6 @@
 package com.jude;
 
 import com.jude.prisoner.NimaPrisoner;
-import com.jude.manager.Manager;
 
 import java.util.Map;
 
