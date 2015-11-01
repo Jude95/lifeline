@@ -22,7 +22,7 @@ public class SimonlaPrisoner implements Prisoner {
 
     @Override
     public int take(int index, int last) {
-        return 500;
+        return totalCount*18/100;
     }
 
     @Override
