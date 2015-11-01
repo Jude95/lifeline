@@ -95,7 +95,7 @@ public class Manager {
             @Override
             public int compare(Map.Entry<Prisoner, Integer> o1, Map.Entry<Prisoner, Integer> o2) {
                 if (!hasEqual[0]&&o1.getKey()!=o2.getKey()){
-                    hasEqual[0] = o2.getValue()==o1.getValue();
+                    hasEqual[0] = o2.getValue().equals(o1.getValue());
                 }
                 return o2.getValue()-o1.getValue();
             }
