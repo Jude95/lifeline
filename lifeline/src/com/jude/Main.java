@@ -1,16 +1,13 @@
 package com.jude;
 
 import com.jude.prisoner.NimaPrisoner;
+import com.jude.prisoner.SimonlaPrisoner;
 
 import java.util.Map;
 
 public class Main {
     public static final Prisoner[] PRISONERS = {
-            new NimaPrisoner(),
-            new NimaPrisoner(),
-            new NimaPrisoner(),
-            new NimaPrisoner(),
-            new NimaPrisoner(),
+            new SimonlaPrisoner(),
             new NimaPrisoner(),
     };
 
