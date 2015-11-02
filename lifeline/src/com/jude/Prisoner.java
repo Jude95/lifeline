@@ -1,7 +1,5 @@
 package com.jude;
 
-import com.jude.manager.Manager;
-
 /**
  * Created by Mr.Jude on 2015/10/28.
  * 这是个有趣的实验，你们都是囚犯，给你们N颗豆子，你们随便拿。

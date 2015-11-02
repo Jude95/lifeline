@@ -1,4 +1,4 @@
-package com.jude.manager;
+package com.jude;
 
 import com.jude.Prisoner;
 
@@ -14,7 +14,7 @@ public class Manager {
     private HashMap<Prisoner,Integer> mScore;
     private HashMap<Prisoner,Integer> mTempHold;
 
-    public Manager(Prisoner[] mPrisoners,int beanCount ) {
+     Manager(Prisoner[] mPrisoners,int beanCount ) {
         this.mPrisoners = Arrays.asList(mPrisoners);
         this.mBeanCount = beanCount;
         this.mScore = new HashMap<Prisoner, Integer>();
@@ -23,7 +23,7 @@ public class Manager {
         }
     }
 
-    public void start(int roundCount){
+     void start(int roundCount){
         //初始化各个囚徒
         for (Prisoner mPrisoner : mPrisoners) {
             try {
@@ -74,7 +74,7 @@ public class Manager {
         return count;
     }
 
-    public HashMap<Prisoner,Integer> getScore(){
+    HashMap<Prisoner,Integer> getScore(){
         return mScore;
     }
 
@@ -95,7 +95,7 @@ public class Manager {
             @Override
             public int compare(Map.Entry<Prisoner, Integer> o1, Map.Entry<Prisoner, Integer> o2) {
                 if (!hasEqual[0]&&o1.getKey()!=o2.getKey()){
-                    hasEqual[0] = o2.getValue()==o1.getValue();
+                    hasEqual[0] = o2.getValue().equals(o1.getValue());
                 }
                 return o2.getValue()-o1.getValue();
             }
