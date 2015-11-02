@@ -1,15 +1,15 @@
 package com.jude;
 
-import com.jude.prisoner.DongguaPrisoner;
-import com.jude.prisoner.NimaPrisoner;
-import com.jude.prisoner.SimonlaPrisoner;
+import com.jude.prisoner.*;
 
 import java.util.Map;
 
 public class Main {
     public static final Prisoner[] PRISONERS = {
             new SimonlaPrisoner(),
-            new SimonlaPrisoner(),
+            new GaijinPrisoner(),
+            new AcePrisoner(),
+            new XuZimoPrisoner(),
             new DongguaPrisoner(),
             new NimaPrisoner(),
     };
