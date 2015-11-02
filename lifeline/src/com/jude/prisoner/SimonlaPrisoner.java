@@ -20,11 +20,20 @@ public class SimonlaPrisoner implements Prisoner {
         this.totalPerson = totalPerson;
     }
 
-    @Override
     public int take(int index, int last) {
-        return 500;
+        if(index ==0){
+            return totalCount*40/100;
+            //让我来做一回好人，把机会留给后面的人:)
+        }
+        if(index==1){
+            return totalCount*18/100;
+            //干扰战术
+        }
+        else {
+            return (totalCount -last)/index;
+            //跟随战术
+        }
     }
-
     @Override
     public void result(boolean survived) {
 
