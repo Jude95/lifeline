@@ -42,7 +42,7 @@ public class IcymoonPrisoner implements Prisoner {
             getManger(manager);
         } catch (Exception e) {
             isGetManger = false;
-            System.out.println("getManager 失败：" + e);
+//            System.out.println("getManager 失败：" + e);
             return;
         }
     }
@@ -62,14 +62,14 @@ public class IcymoonPrisoner implements Prisoner {
         try {
             getMPrisoners();
         } catch (Exception e) {
-            System.out.println("getMPrisoners 失败：" + e);
+//            System.out.println("getMPrisoners 失败：" + e);
             //我亡则天下亡
             return last;
         }
         try {
             getMTempHold();
         } catch (Exception e) {
-            System.out.println("getMTempHold 失败：" + e);
+//            System.out.println("getMTempHold 失败：" + e);
             //我亡则天下亡
             return last;
         }
@@ -81,7 +81,7 @@ public class IcymoonPrisoner implements Prisoner {
             try {
                 toBeTheLastOne();
             } catch (Exception e) {
-                System.out.println("toBeTheLastOne 失败：" + e);
+//                System.out.println("toBeTheLastOne 失败：" + e);
                 //我亡则天下亡
                 return last;
             }
@@ -91,7 +91,7 @@ public class IcymoonPrisoner implements Prisoner {
             try {
                 analyseMTempHold();
             } catch (Exception e) {
-                System.out.println("analyseMTempHold 失败：" + e);
+//                System.out.println("analyseMTempHold 失败：" + e);
                 //我亡则天下亡
                 return last;
             }
