@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class Main {
     public static final Prisoner[] PRISONERS = {
+            new EmptycityPrisoner(),
             new SimonlaPrisoner(),
             new GaijinPrisoner(),
             new AcePrisoner(),
