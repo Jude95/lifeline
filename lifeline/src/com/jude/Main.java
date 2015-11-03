@@ -13,6 +13,7 @@ public class Main {
             new XuZimoPrisoner(),
             new DongguaPrisoner(),
             new NimaPrisoner(),
+            new IcymoonPrisoner()
     };
 
 
@@ -20,7 +21,7 @@ public class Main {
         //new 一个审判者，把囚徒们和1000颗豆子给他
         Manager manager = new Manager(PRISONERS,10000);
         //审判1W次
-        manager.start(3);
+        manager.start(10000);
         for (Map.Entry<Prisoner, Integer> deciderIntegerEntry : manager.getScore().entrySet()) {
             System.out.println(deciderIntegerEntry.getKey().getName()+":"+deciderIntegerEntry.getValue());
         }
