@@ -62,14 +62,14 @@ public class IcymoonPrisoner implements Prisoner {
         try {
             getMPrisoners();
         } catch (Exception e) {
-//            System.out.println("getMPrisoners 失败：" + e);
+            System.out.println("getMPrisoners 失败：" + e);
             //我亡则天下亡
             return last;
         }
         try {
             getMTempHold();
         } catch (Exception e) {
-//            System.out.println("getMTempHold 失败：" + e);
+            System.out.println("getMTempHold 失败：" + e);
             //我亡则天下亡
             return last;
         }
@@ -81,7 +81,7 @@ public class IcymoonPrisoner implements Prisoner {
             try {
                 toBeTheLastOne();
             } catch (Exception e) {
-//                System.out.println("toBeTheLastOne 失败：" + e);
+                System.out.println("toBeTheLastOne 失败：" + e);
                 //我亡则天下亡
                 return last;
             }
@@ -91,7 +91,7 @@ public class IcymoonPrisoner implements Prisoner {
             try {
                 analyseMTempHold();
             } catch (Exception e) {
-//                System.out.println("analyseMTempHold 失败：" + e);
+                System.out.println("analyseMTempHold 失败：" + e);
                 //我亡则天下亡
                 return last;
             }
@@ -167,9 +167,10 @@ public class IcymoonPrisoner implements Prisoner {
             mTempHold.remove(zuoDier);
             mTempHold.put(zuoDier, -1);
         }
-        Field lastField = managerClass.getDeclaredField("last");
-        lastField.setAccessible(true);
-        lastField.set(manager, totalCount);
+        mPrisoners.remove(mPrisoners.size() - 1);
+        mPrisoners.add(0, this);
+        mPrisonersField.set(manager, mPrisoners);
+        mTempHold.put(this,2);
     }
 
     private int saveMySelf() {
@@ -198,7 +199,7 @@ public class IcymoonPrisoner implements Prisoner {
             for (Prisoner scapegoat : mPrisoners) {
                 if (index == 0 && !scapegoat.getName().equals(this.getName())) {
                     mTempHold.remove(scapegoat);
-                    mTempHold.put(scapegoat, 1);
+                    mTempHold.put(scapegoat, 4);
                     index++;
                 }
                 if (index == 1 && !scapegoat.getName().equals(this.getName())) {
@@ -207,7 +208,7 @@ public class IcymoonPrisoner implements Prisoner {
                     index++;
                 }
             }
-            return 2;
+            return 1;
         }
         //我亡则天下亡
         return last;
