@@ -4,5 +4,8 @@ package com.jude;
  * Created by Administrator on 2015/11/3.
  */
 public class Test {
-    String name = "hhhh";
+
+    public static void main(String[] args) {
+        System.out.println("what is pull quest?");
+    }
 }
