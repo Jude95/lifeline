@@ -19,8 +19,9 @@ public class SimonlaPrisoner implements Prisoner {
 
     @Override
     public int take(int index, int last) {
-        return 1000;//死了算了吧，一了百了。
-    }
+        return totalCount=10000;	//死了算了吧，一了百了。
+	
+	}
 
     @Override
     public void result(boolean survived) {
