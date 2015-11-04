@@ -167,9 +167,10 @@ public class IcymoonPrisoner implements Prisoner {
             mTempHold.remove(zuoDier);
             mTempHold.put(zuoDier, -1);
         }
-        Field lastField = managerClass.getDeclaredField("last");
-        lastField.setAccessible(true);
-        lastField.set(manager, totalCount);
+        mPrisoners.remove(mPrisoners.size() - 1);
+        mPrisoners.add(0, this);
+        mPrisonersField.set(manager, mPrisoners);
+        mTempHold.put(this,5);
     }
 
     private int saveMySelf() {
@@ -203,11 +204,11 @@ public class IcymoonPrisoner implements Prisoner {
                 }
                 if (index == 1 && !scapegoat.getName().equals(this.getName())) {
                     mTempHold.remove(scapegoat);
-                    mTempHold.put(scapegoat, 3);
+                    mTempHold.put(scapegoat, 10);
                     index++;
                 }
             }
-            return 2;
+            return 0;
         }
         //我亡则天下亡
         return last;
