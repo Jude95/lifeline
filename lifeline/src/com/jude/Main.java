@@ -12,7 +12,8 @@ public class Main {
             new XuZimoPrisoner(),
             new DongguaPrisoner(),
             new NimaPrisoner(),
-            new ZhangDeShengPrisoner()
+            new ZhangDeShengPrisoner(),
+
     };
 
 
