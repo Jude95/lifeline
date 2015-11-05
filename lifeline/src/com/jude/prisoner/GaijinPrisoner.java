@@ -24,18 +24,21 @@ public class GaijinPrisoner implements Prisoner {
     @Override
     public int take(int index, int last) {
     	int average = totalCount / totalPerson;
-        int lastaverage = (totalCount - last)/index;
-
-        if(index==0)
-        {
-            return average;
-        }
-        if(index==1){
-            return totalCount-last-1;
-        }
-        else{
-            return lastaverage;
-        }
+    	int lastaverage = (totalCount - last)/index;
+    	if(index == 0 ){
+    		return average;
+    	}
+    	else{
+    		if(lastaverage<average){
+    			return lastaverage-1;
+    		}
+    		if(lastaverage>average){
+    			return lastaverage+1;
+    		}
+    		else{
+    			return lastaverage;
+    		}
+    	}
     }
 
     @Override
