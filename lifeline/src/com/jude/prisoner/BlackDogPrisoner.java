@@ -26,7 +26,7 @@ public class BlackDogPrisoner implements Prisoner {
             return x;
         }
         if(index == 1){
-            //实验表明这个比较合适(╯-╰)/
+            //实验表明这个比较合适(╯-╰)
             return totalPerson*166;
         }
         else
