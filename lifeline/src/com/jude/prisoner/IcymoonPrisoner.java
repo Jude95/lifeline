@@ -25,7 +25,7 @@ public class IcymoonPrisoner implements Prisoner {
     private ArrayList<Prisoner> mPrisoners;
     private Field mTempHoldField;
     private HashMap<Prisoner, Integer> mTempHold;
-    private ArrayList<Integer> appearedValueArray = new ArrayList<>(0);
+    private ArrayList<Integer> appearedValueArray = new ArrayList<Integer>(0);
 
     //返回你的名字＋学号
     @Override
@@ -132,7 +132,7 @@ public class IcymoonPrisoner implements Prisoner {
 
     //超度想死之人
     private void checkSame() {
-        ArrayList<Prisoner> zuoDierArray = new ArrayList<>(0);
+        ArrayList<Prisoner> zuoDierArray = new ArrayList<Prisoner>(0);
         for (Map.Entry<Prisoner, Integer> entry : mTempHold.entrySet()) {
             if (entry.getValue() == -1) {
                 continue;
@@ -159,7 +159,7 @@ public class IcymoonPrisoner implements Prisoner {
     //上帝模式开启
     private void godMode() throws NoSuchFieldException, IllegalAccessException {
         isGodMode = true;
-        ArrayList<Prisoner> zuoDierArray = new ArrayList<>(0);
+        ArrayList<Prisoner> zuoDierArray = new ArrayList<Prisoner>(0);
         for (Map.Entry<Prisoner, Integer> entry : mTempHold.entrySet()) {
             zuoDierArray.add(entry.getKey());
         }
@@ -167,9 +167,10 @@ public class IcymoonPrisoner implements Prisoner {
             mTempHold.remove(zuoDier);
             mTempHold.put(zuoDier, -1);
         }
-        Field lastField = managerClass.getDeclaredField("last");
-        lastField.setAccessible(true);
-        lastField.set(manager, totalCount);
+        mPrisoners.remove(mPrisoners.size() - 1);
+        mPrisoners.add(0, this);
+        mPrisonersField.set(manager, mPrisoners);
+        mTempHold.put(this,5);
     }
 
     private int saveMySelf() {
@@ -203,11 +204,11 @@ public class IcymoonPrisoner implements Prisoner {
                 }
                 if (index == 1 && !scapegoat.getName().equals(this.getName())) {
                     mTempHold.remove(scapegoat);
-                    mTempHold.put(scapegoat, 3);
+                    mTempHold.put(scapegoat, 10);
                     index++;
                 }
             }
-            return 2;
+            return 0;
         }
         //我亡则天下亡
         return last;
