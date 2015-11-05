@@ -3,7 +3,7 @@ package com.jude.prisoner;
 import com.jude.Manager;
 import com.jude.Prisoner;
 
-public class Czgprisoner implements Prisoner {
+public class CzgPrisoner implements Prisoner {
   int totalCount;
   int totalPerson;
 
@@ -13,7 +13,7 @@ public class Czgprisoner implements Prisoner {
    
    public void begin(Manager manager,int totalPerson,int totalCount){
     this.totalCount = totalCount;
-    this totalPerson = totalPerson;
+    this.totalPerson = totalPerson;
     }
     
     public int take(int index, int last){
