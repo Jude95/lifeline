@@ -13,12 +13,7 @@ public class Main {
             new XuZimoPrisoner(),
             new DongguaPrisoner(),
             new NimaPrisoner(),
-<<<<<<< HEAD
-            new ZhangDeShengPrisoner(),
 
-=======
-            new IcymoonPrisoner()
->>>>>>> refs/remotes/Jude95/master
     };
 
 
