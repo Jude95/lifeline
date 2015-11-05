@@ -6,7 +6,7 @@ import com.jude.Manager;
 /**
  * Created by Mr.Jude on 2015/10/28.
  */
-public class ZhangDeShengPrisoner implements Prisoner {
+public class ZhangDeshengPrisoner implements Prisoner {
     int totalCount;
     int totalPerson;
 
