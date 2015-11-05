@@ -176,7 +176,8 @@ public class IcymoonPrisoner implements Prisoner {
     private int saveMySelf() {
         int index = 0;
         if (!isGodMode) {
-            for (int i = 2; i < last; i++) {
+            int i;
+            for (i = 2; i < last; i++) {
                 if (!appearedValueArray.contains(i - 1) && !appearedValueArray.contains(i) && !appearedValueArray.contains(i + 1)) {
                     for (Prisoner scapegoat : mPrisoners) {
                         if (index == 0 && !scapegoat.getName().equals(this.getName())) {
@@ -192,9 +193,10 @@ public class IcymoonPrisoner implements Prisoner {
                             continue;
                         }
                     }
-                    return i;
+                    break;
                 }
             }
+            return i;
         } else {
             for (Prisoner scapegoat : mPrisoners) {
                 if (index == 0 && !scapegoat.getName().equals(this.getName())) {
@@ -210,8 +212,6 @@ public class IcymoonPrisoner implements Prisoner {
             }
             return 0;
         }
-        //我亡则天下亡
-        return last;
     }
 
     //最后告诉你活着还是死了
@@ -220,5 +220,6 @@ public class IcymoonPrisoner implements Prisoner {
         //重置一些数据
         isGodMode = false;
         isGetManger = true;
+        appearedValueArray = new ArrayList<Integer>(0);
     }
 }
