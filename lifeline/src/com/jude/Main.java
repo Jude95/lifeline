@@ -13,7 +13,7 @@ public class Main {
             new XuZimoPrisoner(),
             new DongguaPrisoner(),
             new NimaPrisoner(),
-            new IcymoonPrisoner()
+
     };
 
 
