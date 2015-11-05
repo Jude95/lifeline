@@ -1,13 +1,35 @@
 package com.jude.prisoner;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
+import com.jude.Prisoner;
+import com.jude.Manager;
 
 /**
- * Created by Administrator on 2015/11/3.
+ * Created by Mr.Jude on 2015/10/28.
  */
-public class ZhangDeShengPrisoner {
-    public void main(String args[]){
-        System.out.print("≤‚ ‘github");
+public class ZhangDeShengPrisoner implements Prisoner {
+    int totalCount;
+    int totalPerson;
+
+    @Override
+    public String getName() {
+        return "Õıƒ·¬Í2013211470";
+    }
+
+    @Override
+    public void begin(Manager manager,int totalPerson, int totalCount) {
+        this.totalCount = totalCount;
+        this.totalPerson = totalPerson;
+    }
+
+    @Override
+    public int take(int index, int last) {
+
+        return ((totalCount-last)/(index+1) + totalCount/totalPerson)/2;
+    }
+
+    @Override
+    public void result(boolean survived) {
+
     }
 
 }
