@@ -3,7 +3,7 @@ package com.jude.prisoner;
 import com.jude.Manager;
 import com.jude.Prisoner;
 
-public class zdjPrisoner implements Prisoner {
+public class ZdjPrisoner implements Prisoner {
 	private int totalPerson,totalCount;
 
 	@Override
