@@ -8,7 +8,7 @@ public class lstPrisoner implements Prisoner {
 
 	@Override
 	public String getName() {
-		return "2014214258李尚庭";
+		return "李尚庭2014214258";
 
 	}
 

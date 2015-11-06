@@ -18,7 +18,8 @@ public class Main {
             new CzgPrisoner(),
             new IcymoonPrisoner(),
             new ZhangDeShengPrisoner(),
-            new JianJunPrisoner()
+            new JianJunPrisoner(),
+            new lstPrisoner()
     };
 
 
