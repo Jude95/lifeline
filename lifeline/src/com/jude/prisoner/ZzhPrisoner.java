@@ -13,7 +13,7 @@ public class ZzhPrisoner implements Prisoner{
 
     @Override
     public String getName(){
-        return"ÕÅÕıº¼2015214284";
+        return"å¼ æ­£æ­2015214284";
     }
 
     @Override
