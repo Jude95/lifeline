@@ -22,7 +22,7 @@ public class ZdjPrisoner implements Prisoner {
 	@Override
 	public int take(int index, int last) {
 		
-		return (totalCount-last)/2(index+1)+last/2(index+6);
+		return (totalCount-last)/2*(index+1)+last/2*(index+6);//学过编程吗
 	}
 
 	@Override

@@ -8,14 +8,14 @@ public class LuckPrisoner implements Prisoner {
     int totalPerson;
 	
 	public String getName(){
-		return "½ª²¨ 2015214036";
+		return "å§œæ³¢ 2015214036";
 	}
 	 public void begin(Manager manager,int totalPerson, int totalCount){
         this.totalCount = totalCount;
         this.totalPerson = totalPerson;
     }
 	public int take(int index, int last) {
-        return 250£»  //Õâ¸öÊı×ÖºÜÓĞÒâÒåÂï...Îï¼«±Ø·´£¬ÀÏ·ò¶àÄêµÄ¾­Ñé½ÌÑµ....ÇóÊÕ²Ø£¡£¡£¡
+        return 250;  //è¿™ä¸ªæ•°å­—å¾ˆæœ‰æ„ä¹‰å˜›...ç‰©æå¿…åï¼Œè€å¤«å¤šå¹´çš„ç»éªŒæ•™è®­....æ±‚æ”¶è—ï¼ï¼ï¼
     }
 	 public void result(boolean survived) {
 

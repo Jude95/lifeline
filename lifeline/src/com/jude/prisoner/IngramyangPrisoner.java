@@ -1,3 +1,8 @@
+package com.jude.prisoner;
+
+import com.jude.Manager;
+import com.jude.Prisoner;
+
 /**
  * Created by ingra on 2015-11-06.
  */
@@ -7,7 +12,7 @@ public class IngramyangPrisoner implements Prisoner {
 
     @Override
     public String getName() {
-        return "Ñî×Ó´Ï2015211670";
+        return "ï¿½ï¿½ï¿½Ó´ï¿½2015211670";
     }
 
     @Override
@@ -26,4 +31,4 @@ public class IngramyangPrisoner implements Prisoner {
 
     }
 }
-//¾ÍÊÇ²»¶®ÎÒ¾ÍÊÇÎªÁË½»github×÷Òµ==
+//ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½Ò¾ï¿½ï¿½ï¿½Îªï¿½Ë½ï¿½githubï¿½ï¿½Òµ==

@@ -1,18 +1,16 @@
 package com.jude.prisoner;
-
 import com.jude.Prisoner;
 import com.jude.Manager;
-
 /**
- * Created by Mr.Jude on 2015/10/28.
+ * Created by chenChanghong on 2015/11/6.
  */
-public class FortunePrisoner implements Prisoner {
-    int totalCount;
+public class chenChanghongPrisoner implements Prisoner{
+   int totalCount;
     int totalPerson;
 
     @Override
     public String getName() {
-        return "ÁõÅô2014214019";
+        return "é™ˆæ˜¶å®2015213957";
     }
 
     @Override
@@ -21,14 +19,20 @@ public class FortunePrisoner implements Prisoner {
         this.totalPerson = totalPerson;
     }
 
-    @Override
     public int take(int index, int last) {
-        return  ((totalCount-last)/(index+1) + totalCount/totalPerson)/7£»//ÎªÊ²Ã´ÊÇ7£¿ÒòÎªÎÒÏ²»¶°¡£¡
+     if(index==0||(index+1)==totalPerson)//ç”Ÿå­˜æˆ–æ­»äº¡è¿™æ˜¯ä¸ªé—®é¢˜
+     {
+      return last;
+      }
+    else if(last>=(totalCount-last)/(index+1)) {
+         return (totalCount - last) / (index + 1);
+     }
+     return -1;
     }
-
     @Override
     public void result(boolean survived) {
 
     }
+
 
 }

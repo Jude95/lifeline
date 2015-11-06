@@ -1,4 +1,4 @@
-package com.jude.Prisoner;
+package com.jude.prisoner;
 
 import com.jude.Manager;
 

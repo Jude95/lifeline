@@ -1,7 +1,7 @@
 package com.jude.prisoner;
 
+import com.jude.Manager;
 import com.jude.Prisoner;
-import com.jude.manager.Manager;
 
 /**
  * Created by admin on 2015/11/5.
@@ -12,7 +12,7 @@ public class AchaoPrisoner implements Prisoner
     int totalCount;
     public String getName()
     {
-        return "утр╩╥╚2015210620";
+        return "О©╫О©╫р╩О©╫О©╫2015210620";
     }
     public void begin(Manager manager, int totalPerson, int totalCount)
     {
