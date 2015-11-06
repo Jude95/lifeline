@@ -9,7 +9,7 @@ public class ColePrisoner {
     int totalCount;
     int totalPerson;
 
-    public String getName() {return "²ÜÍş2015214622";}
+    public String getName() {return "æ›¹å¨2015214622";}
 
 
     public void begin(Manager manager,int totalPerson, int totalCount) {
