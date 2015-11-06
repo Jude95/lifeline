@@ -9,7 +9,7 @@ public class BlackDogPrisoner implements Prisoner {
 
     @Override
     public String getName() {
-        return "ÁõÄ¬Ïş2015211793";
+        return "åˆ˜é»˜æ™“2015211793";
     }
 
     @Override
@@ -21,12 +21,12 @@ public class BlackDogPrisoner implements Prisoner {
     @Override
     public int take(int index, int last) {
         if (index == 0) {
-            //ÉúËÀÓĞÃü¨r(¨s_¨t)¨q
+            //ç”Ÿæ­»æœ‰å‘½â•®(â•¯_â•°)â•­
             int x = 1 + (int) (Math.random() * totalCount);
             return x;
         }
         if(index == 1){
-            //ÊµÑé±íÃ÷Õâ¸ö±È½ÏºÏÊÊ(¨s-¨t)
+            //å®éªŒè¡¨æ˜è¿™ä¸ªæ¯”è¾ƒé è°±ï¼ˆçœŸçš„æ˜¯å®éªŒ(ï¼ƒï¼ï¼)/ .ï¼‰
             return totalPerson*166;
         }
         else
