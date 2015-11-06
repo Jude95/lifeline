@@ -1,9 +1,12 @@
 package lifeline.src.com.jude.prisoner;
 
+import com.jude.Manager;
+import com.jude.Prisoner;
+
 /**
  * Created by lxx569378712m on 2015/11/6.
  */
-public class HunterlyPrisonerimplements Prisoner {
+public class HunterlyPrisoner implements Prisoner {
     int totalCount;
     int totalPerson;
 

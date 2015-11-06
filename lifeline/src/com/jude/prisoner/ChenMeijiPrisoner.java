@@ -14,11 +14,11 @@ public class ChenmeijiPrioner implements Prisoner{
 @Override
 public void begin(Manager manager,int totalPerson,int totalCount){
    this.totalCount=totalCount;
-   this.totalPerson=totalPrson;
+   this.totalPerson=totalPerson;
 }
 @Override
- public int take(int index,int lase）{
- return ((totalCount-last)/(index+1)+totalcount/totalPerson)/3;
+ public int take(int index,int last){
+ return ((totalCount-last)/(index+1)+totalCount/totalPerson)/3;
 }
 @Override
 public void result(boolean survived){
