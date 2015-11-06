@@ -13,7 +13,7 @@ public class fanmangPrisoner {
 
         @Override
         public String getName() {
-            return "·²Ã¢2015214165";
+            return "å‡¡èŠ’2015214165";
         }
 
         @Override
