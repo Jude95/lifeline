@@ -23,7 +23,7 @@ public class HanLiangPrisoner implements Prisoner{
 		if(((totalCount - last)/indx) < (totalCount / totalPerson)){
 			return ((totalCount - last)/(indx - 1) + 1);
 		}
-		if else(((totalCount - last)/indx) > (totalCount / totalPerson)){
+		else if(((totalCount - last)/indx) > (totalCount / totalPerson)){
 			return ((totalCount - last / indx + 1) - 1);
 		}
 		else{
