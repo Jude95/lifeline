@@ -28,7 +28,7 @@ public class NutCcPrisoner implements Prisoner {
     }
 
     @Override
-    public void result(boolean survived) {
+    public void result(boolean survived) {//==
 
     }
 
