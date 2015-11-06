@@ -11,7 +11,7 @@ public abstract class HowellPrisoner implements Prisoner {
     int totalCount;
     @Override
     public String getName() {
-        return "ÎÀÇ±ê»2015210622";
+        return "å«æ½œæ˜Š2015210622";
     }
 
     @Override

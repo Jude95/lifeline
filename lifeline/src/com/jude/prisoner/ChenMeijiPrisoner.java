@@ -4,7 +4,7 @@ import com.jude.Prisoner;
 /**
  *Created by asusl on 2015/11/6.
 */
-public class ChenmeijiPrioner implements Prisoner{
+public class ChenMeijiPrisoner implements Prisoner{
   int totalCount;
   int totalPerson;
   @Override
