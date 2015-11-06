@@ -36,7 +36,7 @@ public class Manager {
         for (int round = 0; round < roundCount; round++) {
             int total = mBeanCount;
             init();
-            System.out.println("第" + round + "局开始");
+            //System.out.println("第" + round + "局开始");
             for (int order = 0; order < mPrisoners.size(); order++) {
                 int curTake = take(order,total);
                 total-=curTake;
@@ -68,7 +68,7 @@ public class Manager {
         //如果返回无效个数，和上面的神经病一样死
         if (count>last||count<0)count=-1;
 
-        System.out.println(mPrisoners.get(index).getName()+"取了"+count+"个");
+        //System.out.println(mPrisoners.get(index).getName()+"取了"+count+"个");
         //保存每个人取的豆子数
         mTempHold.replace(mPrisoners.get(index),count);
         return count;
@@ -102,7 +102,7 @@ public class Manager {
         });
         //如果有重复，全部死
         if (hasEqual[0]){
-            System.out.println("全都得死");
+            //System.out.println("全都得死");
             for (Map.Entry<Prisoner, Integer> prisonerIntegerEntry : arrayList) {
                 prisonerIntegerEntry.getKey().result(false);
             }
@@ -116,9 +116,9 @@ public class Manager {
         try {
 
             arrayList.get(0).getKey().result(false);
-            System.out.println(arrayList.get(0).getKey().getName()+"拿了最多:"+arrayList.get(0).getValue()+"个");
+            //System.out.println(arrayList.get(0).getKey().getName()+"拿了最多:"+arrayList.get(0).getValue()+"个");
             arrayList.get(arrayList.size()-1).getKey().result(false);
-            System.out.println(arrayList.get(arrayList.size()-1).getKey().getName()+"拿了最少:"+arrayList.get(arrayList.size()-1).getValue()+"个");
+            //System.out.println(arrayList.get(arrayList.size()-1).getKey().getName()+"拿了最少:"+arrayList.get(arrayList.size()-1).getValue()+"个");
 
         }catch (Exception e){
             //总有刁民想害朕

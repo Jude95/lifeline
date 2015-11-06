@@ -1,4 +1,4 @@
-package lifeline.src.com.jude.prisoner;
+package com.jude.prisoner;
 
 import com.jude.Manager;
 import com.jude.Prisoner;

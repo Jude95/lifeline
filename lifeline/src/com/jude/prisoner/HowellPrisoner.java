@@ -6,7 +6,7 @@ import com.jude.Manager;
 /**
  * Created by Howell on 2015/11/3.
  */
-public abstract class HowellPrisoner implements Prisoner {
+public class HowellPrisoner implements Prisoner {
     int totalPerson;
     int totalCount;
     @Override
