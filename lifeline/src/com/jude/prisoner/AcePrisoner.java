@@ -19,21 +19,19 @@ public class AcePrisoner implements Prisoner {
     public void begin(Manager manager,int totalPerson, int totalCount) {
         this.totalCount = totalCount;
         this.totalPerson = totalPerson;
-    }
 
+    }
     @Override
     public int take(int index, int last) {
         if(index==0)
-        {
-           return totalCount-totalPerson;//所有人一起死好了
-        }
-        else if(index==1)
-            return (totalCount-last+1);//要不我活要不大家一起死
+            return totalCount;//就这样吧
+        else if (index==1)
+            return ((totalCount-last)/(index+1) + totalCount/totalPerson)/2;//王尼玛算法
         else
-            return (totalCount -last)/index;//不会只是我一个人死
+            return (totalCount-last)/index+1;//比前面的平均数多拿一个好了
     }
 
-        @Override
-        public void result(boolean survived) {
-        }
+    @Override
+    public void result(boolean survived) {
+    }
 }
