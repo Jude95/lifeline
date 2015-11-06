@@ -20,7 +20,7 @@ public class ChenjiPaynePrisoner implements Prisoner {
 
     @Override
     public int take(int index, int last) {
-           return totalCount-totalPerson;
+           return totalCount-totalPerson;//all die
         }
         
         @Override
