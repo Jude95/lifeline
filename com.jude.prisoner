@@ -1,0 +1,38 @@
+package com.jude.prisoner;
+
+import com.jude.Manager;
+import com.jude.Prisoner;
+
+/**
+ * Created by dengxi on 2015/11/6.
+ */
+public class dengxi  implements Prisoner {
+    int totalCount;
+    int totalPerson;
+
+    @Override
+    public String getName() {
+        return "邓希2015213888";
+    }
+
+    @Override
+    public void begin(Manager manager,int totalPerson, int totalCount) {
+        this.totalCount = totalCount;
+        this.totalPerson = totalPerson;
+    }
+
+
+@Override
+public int take(int index,int last){
+if(index==0)//这就是运命啊！
+     {
+      return last;
+      }
+    else if（last>=(totalCount-last)/(index-1)）
+    ｛
+        return (totalCount-last)/(index-1);
+   ｝
+ @Override
+    public void result(boolean survived) {
+    }
+}
