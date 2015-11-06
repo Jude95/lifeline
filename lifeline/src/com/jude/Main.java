@@ -13,7 +13,12 @@ public class Main {
             new XuZimoPrisoner(),
             new DongguaPrisoner(),
             new NimaPrisoner(),
-            new IcymoonPrisoner()
+            new BlackDogPrisoner(),
+            new CquptZouShengPrisoner(),
+            new CzgPrisoner(),
+            new IcymoonPrisoner(),
+            new ZhangDeShengPrisoner(),
+            new JianJunPrisoner()
     };
 
 
