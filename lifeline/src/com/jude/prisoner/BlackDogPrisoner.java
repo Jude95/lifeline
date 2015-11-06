@@ -1,5 +1,8 @@
 package com.jude.prisoner;
 
+import com.jude.Manager;
+import com.jude.Prisoner;
+
 /**
  * Created by asus on 2015/11/5.
  */
