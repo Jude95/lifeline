@@ -1,5 +1,8 @@
 package com.jude.prisoner;
 
+import com.jude.Manager;
+import com.jude.Prisoner;
+
 /**
  * Created by asus on 2015/11/5.
  */
@@ -9,7 +12,7 @@ public class BlackDogPrisoner implements Prisoner {
 
     @Override
     public String getName() {
-        return "ÁõÄ¬Ïþ2015211793";
+        return "ï¿½ï¿½Ä¬ï¿½ï¿½2015211793";
     }
 
     @Override
@@ -21,12 +24,12 @@ public class BlackDogPrisoner implements Prisoner {
     @Override
     public int take(int index, int last) {
         if (index == 0) {
-            //ÉúËÀÓÐÃü¨r(¨s_¨t)¨q
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½r(ï¿½s_ï¿½t)ï¿½q
             int x = 1 + (int) (Math.random() * totalCount);
             return x;
         }
         if(index == 1){
-            //ÊµÑé±íÃ÷Õâ¸ö±È½ÏºÏÊÊ(¨s-¨t)
+            //Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½Ïºï¿½ï¿½ï¿½(ï¿½s-ï¿½t)
             return totalPerson*166;
         }
         else
