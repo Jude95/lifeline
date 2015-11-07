@@ -28,7 +28,7 @@ public class JerryPrisoner implements Prisoner {
             return totalCount-999;
 
         }
-        else if(1<=index&&index<=999){
+        else if(1<=index&&index<=(totalPerson/2)){
             return totalCount+last;
         }
         else
