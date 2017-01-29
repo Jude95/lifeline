@@ -63,3 +63,27 @@ public class Main {
     }
 
 }
+ public class SunshiePrisoner 
++    {   int prisonnum;
++        int n,m;
++         m=1000%prisonnum;
++        srand(time(NULL));
++        n=rand()%1000+1;
++        do
++        {
++            if(m>n)
++            System.out.println("死的人多")；
++            else
++            System.out.println("死的人少")while(m!=n);
++        
++        }
++        public string getname()
++        {
++            return "liuxiaoxiao2014210265";
++            
++        }
++        public string getresult()
++        {
++            return"I can't understant the question";
+         }
+-    }
